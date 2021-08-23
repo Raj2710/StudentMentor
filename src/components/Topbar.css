@@ -1,0 +1,38 @@
+.container{
+    background-color: teal;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+}
+.title{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    align-items:baseline;
+}
+.side-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    align-items: center;
+    font-size: larger;
+    padding-right: 10px;
+}
+
+.Link{
+    color: white;
+    padding-left: 15px;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.Link .MuiSvgIcon-root{
+    font-size: xx-large;
+    margin-bottom: -5px;
+}
+.Link:hover{
+    font-size: larger;
+}

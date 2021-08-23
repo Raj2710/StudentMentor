@@ -1,0 +1,27 @@
+body{
+    background-color: whitesmoke;
+}
+.elements{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.homelink{
+    padding-right: 10px;
+    padding-top: 20px;
+}
+.btn{
+    color: white;
+    background-color: teal;
+    border-radius: 5px;
+    padding: 7px 5px 7px 5px;
+    border: teal;
+    font-size: larger;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 1px 2px grey;
+}
