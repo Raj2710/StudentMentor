@@ -22,17 +22,28 @@
     padding-right: 10px;
 }
 
-.Link{
+.TLink{
     color: white;
     padding-left: 15px;
     padding-right: 5px;
     text-decoration: none;
 }
 
-.Link .MuiSvgIcon-root{
+.TLink:active{
+    color: black;
+    text-decoration: none;
+}
+
+.TLink:focus{
+    color: black;
+    text-decoration: none;
+}
+.TLink .MuiSvgIcon-root{
     font-size: xx-large;
     margin-bottom: -5px;
 }
-.Link:hover{
+.TLink:hover{
+    text-decoration: none;
+    color: white;
     font-size: larger;
 }

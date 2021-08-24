@@ -1,6 +1,5 @@
 import React, {useEffect,useState} from 'react'
 import axios from 'axios';
-import './All.css'
 function AllStudents() {
     let [data,setData]=useState([]);
 
@@ -14,7 +13,7 @@ function AllStudents() {
     },[])
     return (
         <div className="all-wrapper">
-            <table>
+            <table className="table table-striped table-hover">
                 <tbody>
                 <tr>
                     <th>Student Name</th>

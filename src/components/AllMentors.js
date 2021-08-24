@@ -1,6 +1,5 @@
 import React, {useEffect,useState} from 'react'
 import axios from 'axios';
-import './All.css'
 function AllMentors() {
 
     let [data,setData]=useState([]);
@@ -8,18 +7,18 @@ function AllMentors() {
     async function getData(){
         let response = await axios.get("https://stumen.herokuapp.com/all-mentors")
         setData(response.data);
-        //console.log(response.data);
+        console.log(response.data);
     }
     useEffect(()=>{
         getData();
     },[])
     return (
         <div className="all-wrapper">
-            <table>
+            <table className="table table-striped table-hover">
                 <tbody>
                 <tr>
-                    <th>Student Name</th>
                     <th>Mentor Name</th>
+                    <th>Students</th>
                 </tr>
                 {
                     data.map((e,i)=>{
@@ -29,9 +28,9 @@ function AllMentors() {
                                 <table>
                                     <tbody>
                                         {
-                                            e.mentorStudents.map((f,i)=>{
+                                            e.mentorStudents?e.mentorStudents.map((f,i)=>{
                                                 return <tr key={i}><td>{f}</td></tr>
-                                            })
+                                            }):<></>
                                         }
                                     </tbody>
                                 </table>

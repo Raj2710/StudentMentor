@@ -1,3 +1,25 @@
 *{
     margin: 0px;
 }
+
+.add-wrapper{
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.inputfileds{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 150px 180px;
+    grid-gap: 20px;
+    font-size: larger;
+    padding: 10px;
+    justify-content: center;
+}
+
+.input{
+    border: none;
+    border-radius: 5px;
+    width: 150%;
+}

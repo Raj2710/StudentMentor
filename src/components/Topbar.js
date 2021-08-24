@@ -11,13 +11,13 @@ function Topbar() {
                 <span>Student Mentor Management System</span>
             </h2>
             <div className="side-nav">
-                <Link to='/home' className="Link">
+                <Link to='/home' className="TLink">
                     <span><HomeIcon/> Home</span>
                 </Link>
-                <Link to='/all-mentors' className="Link">
+                <Link to='/all-mentors' className="TLink">
                     <span><EmojiPeopleIcon/>All-Mentors</span>
                 </Link>
-                <Link to='/all-students' className="Link">
+                <Link to='/all-students' className="TLink">
                     <span><PeopleIcon/>All-Students</span>
                 </Link>
             </div>
